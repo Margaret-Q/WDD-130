@@ -1,0 +1,79 @@
+/* styles.css */
+h1, h2, h3, h4, h5, h6 {
+    font-family: math;
+    font-weight: 700;
+}
+
+body {
+    font-family: "Monomakh noto sans-serif";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    background: #17a2b8;
+}
+
+.navbar-brand {
+    letter-spacing: 1.5px;
+    font-size: 24px;
+}
+
+.nav-link {
+    letter-spacing: 1px;
+}
+
+.gallery:hover {
+    filter: brightness(115%);
+}
+
+.accent-line {
+    width: 150px;
+    height: 2px;
+    background-color: #17a2b8;
+}
+
+.spacer-sm {
+    height: 1.5rem;
+}
+
+.spacer-xs {
+    height: 0.5rem;
+}
+
+.spacer-md {
+    height: 2.5rem;
+}
+
+.card {
+    --bs-card-border-width: 0px;
+}
+
+.btn {
+    background: #17a2b8;
+    color: white;
+}
+
+.bi-star {
+    font-size: 16px;
+    color: #17a2b8;
+}
+
+.footer-top {
+    background: #17a2b8;
+}
+
+.container-fluid.bg-success-subtle .text-center {
+    font-size: 13px;
+}
+
+iframe {
+    width: 100%;
+    border: 0;
+}
+
+@media (min-width: 992px) {
+    .gallery {
+        width: 100%;
+    }
+}
