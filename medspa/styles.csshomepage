@@ -1,0 +1,142 @@
+/* styles.csshomepage */
+body {
+    font-family: "Monomakh noto sans-serif"; 
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #17a2b8;
+}
+
+/* Header */
+.header {
+    background-color: #17a2b8;
+    padding: 1rem;
+    text-align: right;
+}
+
+.contact-info span {
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    color: #17a2b8;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #17a2b8;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+}
+
+.nav-link:hover {
+    color: #e0f7fa;
+}
+
+/* Main Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "welcome image"
+        "insurance insurance";
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.welcome {
+    grid-area: welcome;
+}
+
+.image-section {
+    grid-area: image;
+}
+
+.insurance {
+    grid-area: insurance;
+    background-color: #e6f4ea;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #17a2b8;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #17a2b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.accent-line {
+    width: 150px;
+    height: 2px;
+    background-color: #17a2b8;
+    margin-bottom: 1.5rem;
+}
+
+/* Images */
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    background-color: #17a2b8;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "welcome"
+            "image"
+            "insurance";
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
